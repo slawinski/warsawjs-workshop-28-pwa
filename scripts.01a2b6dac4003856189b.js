@@ -1,0 +1,1 @@
+const is="serviceWorker"in navigator;console.log({is:is}),is&&navigator.serviceWorker.register("sw.js").then((...o)=>{console.log(...o)}).catch(o=>{console.log(o)});
