@@ -37,21 +37,21 @@ self.addEventListener('fetch', (evt) => {
   );
 });
 
-async function handleRequest(evt) {
-  const cache = await caches.open(CACHE_NAME);
-  // sprawdz czy isnieje response na request w cache
-  const resource = await cache.match(evt.request);
+// async function handleRequest(evt) {
+//   const cache = await caches.open(CACHE_NAME);
+//   // sprawdz czy isnieje response na request w cache
+//   const resource = await cache.match(evt.request);
 
-  // nie ma w cache - zwracamy
-  if (resouce) {
-    return resource;
-  }
+//   // nie ma w cache - zwracamy
+//   if (resouce) {
+//     return resource;
+//   }
 
-  // Nie ma Cache - topwrzymy zaputanie http
-  const response = await fetch(evt.request)
+//   // Nie ma Cache - topwrzymy zaputanie http
+//   const response = await fetch(evt.request)
 
-  //dodajemy do cache
-  await cache.put(request, response.clone());
+//   //dodajemy do cache
+//   await cache.put(request, response.clone());
 
-  return response;
-}
+//   return response;
+// }
