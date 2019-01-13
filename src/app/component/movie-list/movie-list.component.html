@@ -1,5 +1,6 @@
-<pre>{{ movies | json }}</pre>
+<!-- <pre>{{ movies | json }}</pre> -->
 
 <app-movie-list-item
-
+  *ngFor="let item of movies"
+  [movie]="item"
 ></app-movie-list-item>
