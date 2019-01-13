@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Film-A",
+    "description": "qwerty",
+    "imageUrl": "https://picsum.photos/100/300/?random"
+  },
+  {
+    "title": "Film-B",
+    "description": "asdfgh",
+    "imageUrl": "https://picsum.photos/100/300/?random"
+  },
+  {
+    "title": "Film-C",
+    "description": "zxcvbn",
+    "imageUrl": "https://picsum.photos/100/300/?random"
+  }
+]

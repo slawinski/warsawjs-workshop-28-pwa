@@ -2,7 +2,7 @@
   "name": "WarsawJS Workshop #28 - PWA",
   "short_name": "PWA",
   "theme_color": "#FE7F9C",
-  "background-color":"#FDAB9F",
+  "background_color":"#FDAB9F",
   "icons": [
     {
       "src": "assets/icons/android/android-launchericon-512-512.png",

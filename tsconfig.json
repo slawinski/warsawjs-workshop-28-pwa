@@ -5,6 +5,10 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
     "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
