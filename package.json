@@ -8,8 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+
     "predeploy": "ng build --prod --base-href=/warsawjs-workshop-28-pwa/",
-    "deploy": "gh-pages -d dist/pwa"
+    "deploy": "gh-pages -d dist/pwa",
+    "dev": "http-server -c-1 dist/pwa"
   },
   "private": true,
   "dependencies": {
