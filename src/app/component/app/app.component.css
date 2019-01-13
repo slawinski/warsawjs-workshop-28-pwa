@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+.skip-to-content {
+  position: absolute;
+  left: 10px;
+  top: -200px;
+  background: blue;
+  color: white;
+}
+
+.skip-to-content:focus {
+  top: 10px;
+}
