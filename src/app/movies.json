@@ -1,20 +1,114 @@
 [
   {
     "id": "1",
-    "title": "Film-A",
-    "description": "qwerty",
-    "imageUrl": "https://picsum.photos/200/300/?random"
-  },
-  {
-    "id": "2",
-    "title": "Film-B",
-    "description": "asdfgh",
-    "imageUrl": "https://picsum.photos/200/300/?random"
-  },
-  {
-    "id": "3",
-    "title": "Film-C",
-    "description": "zxcvbn",
-    "imageUrl": "https://picsum.photos/200/300/?random"
-  }
+    "title": "Gladiator",
+    "Year": "2000",
+    "Rated": "R",
+    "Released": "05 May 2000",
+    "Runtime": "155 min",
+    "Genre": "Action, Adventure, Drama",
+    "Director": "Ridley Scott",
+    "Writer": "David Franzoni (story), David Franzoni (screenplay), John Logan (screenplay), William Nicholson (screenplay)",
+    "Actors": "Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed",
+    "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "Language": "English",
+    "Country": "USA, UK",
+    "Awards": "Won 5 Oscars. Another 53 wins & 101 nominations.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "Ratings": [
+    {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+    },
+    {
+    "Source": "Rotten Tomatoes",
+    "Value": "76%"
+    },
+    {
+    "Source": "Metacritic",
+    "Value": "67/100"
+    }
+    ],
+    "Metascore": "67",
+    "imdbRating": "8.5",
+    "imdbVotes": "1,174,472",
+    "imdbID": "tt0172495",
+    "Type": "movie",
+    "DVD": "21 Nov 2000",
+    "BoxOffice": "N/A",
+    "Production": "Dreamworks Distribution LLC",
+    "Website": "http://www.gladiator-thefilm.com",
+    "Response": "True"
+    },
+    {
+      "id": "2",
+      "title": "Shrek",
+      "Year": "2001",
+      "Rated": "PG",
+      "Released": "18 May 2001",
+      "Runtime": "90 min",
+      "Genre": "Animation, Adventure, Comedy, Family, Fantasy",
+      "Director": "Andrew Adamson, Vicky Jenson",
+      "Writer": "William Steig (based upon the book by), Ted Elliott, Terry Rossio, Joe Stillman, Roger S.H. Schulman, Cody Cameron (additional dialogue), Chris Miller (additional dialogue), Conrad Vernon (additional dialogue)",
+      "Actors": "Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow",
+      "description": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+      "Language": "English",
+      "Country": "USA",
+      "Awards": "Won 1 Oscar. Another 36 wins & 60 nominations.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Ratings": [
+      {
+      "Source": "Internet Movie Database",
+      "Value": "7.9/10"
+      },
+      {
+      "Source": "Rotten Tomatoes",
+      "Value": "88%"
+      },
+      {
+      "Source": "Metacritic",
+      "Value": "84/100"
+      }
+      ],
+      "Metascore": "84",
+      "imdbRating": "7.9",
+      "imdbVotes": "543,911",
+      "imdbID": "tt0126029",
+      "Type": "movie",
+      "DVD": "02 Nov 2001",
+      "BoxOffice": "$266,982,666",
+      "Production": "Dreamworks",
+      "Website": "http://www.shrek.com/",
+      "Response": "True"
+      },
+      {
+        "id": "3",
+        "title": "Miodowe lata",
+        "Year": "1998–2003",
+        "Rated": "N/A",
+        "Released": "13 Oct 1998",
+        "Runtime": "30 min",
+        "Genre": "Comedy",
+        "Director": "N/A",
+        "Writer": "N/A",
+        "Actors": "Cezary Zak, Artur Barcis",
+        "description": "N/A",
+        "Language": "Polish",
+        "Country": "Poland",
+        "Awards": "N/A",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAwYjExNzQtYjI1ZS00ZTU3LTgzYWQtZTQxMTk5ZmYyYWMzXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_SX300.jpg",
+        "Ratings": [
+        {
+        "Source": "Internet Movie Database",
+        "Value": "6.4/10"
+        }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.4",
+        "imdbVotes": "262",
+        "imdbID": "tt0389660",
+        "Type": "series",
+        "totalSeasons": "1",
+        "Response": "True"
+        }
 ]
