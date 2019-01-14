@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../../interfaces/movie';
+
 import { ActivatedRoute } from '../../../../node_modules/@angular/router';
 import { MoviesService } from '../../services/movies.service';
+import { Movie } from '../../interfaces/movie';
 
 @Component({
   selector: 'app-page-movie-profile',

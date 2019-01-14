@@ -1,4 +1,7 @@
-<h1>{{ movie.title }}</h1>
+<h2>{{ movie.title }}</h2>
+<p
+  *ngFor="let item of movie | keyvalue"
+><strong>{{ item.key }}: </strong>{{ item.value }}</p>
 <img
   [src]="movie.imageUrl"
 />
