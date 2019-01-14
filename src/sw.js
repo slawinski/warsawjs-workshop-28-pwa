@@ -18,40 +18,40 @@ self.addEventListener('activate', (evt) =>{
   evt.waitUntil(startActivating)
 });
 
-// async function startActivating() {
-//   try {
-//     const keys = await caches.keys();
-//     const deleted = keys
-//       .filter(key !== CACHE_NAME)
-//       .map(key => caches.delete(key));
-//     return await Promise.all(deleted);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
+async function startActivating() {
+  try {
+    const keys = await caches.keys();
+    const deleted = keys
+      .filter(key => key !== CACHE_NAME)
+      .map(key => caches.delete(key));
+    return await Promise.all(deleted);
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-// self.addEventListener('fetch', (evt) => {
-//   console.log('[sw]', evt.request);
-//   evt.respondWith(
-//     () => handleRequest(evt)
-//   );
-// });
+self.addEventListener('fetch', (evt) => {
+  console.log('[sw]', evt.request);
+  evt.respondWith(handleRequest(evt));
+});
 
-// async function handleRequest(evt) {
-//   const cache = await caches.open(CACHE_NAME);
-//   // sprawdz czy isnieje response na request w cache
-//   const resource = await cache.match(evt.request);
+async function handleRequest(evt) {
+  const request = evt.request;
 
-//   // nie ma w cache - zwracamy
-//   if (resouce) {
-//     return resource;
-//   }
+  const cache = await caches.open(CACHE_NAME);
+  // sprawdz czy isnieje response na request w cache
+  const resource = await cache.match(request);
 
-//   // Nie ma Cache - topwrzymy zaputanie http
-//   const response = await fetch(evt.request)
+  // nie ma w cache - zwracamy
+  if (resource) {
+    return resource;
+  }
 
-//   //dodajemy do cache
-//   await cache.put(request, response.clone());
+  // Nie ma Cache - topwrzymy zaputanie http
+  const response = await fetch(request.clone())
 
-//   return response;
-// }
+  //dodajemy do cache
+  await cache.put(request, response.clone());
+
+  return response;
+}
