@@ -1,7 +1,7 @@
 const CACHE_NAME = 'pwa-1.0.1';
 
 self.addEventListener('install', (evt) => {
-  evt.waitUntil(startCaching)
+  evt.waitUntil(startCaching())
 });
 
 async function startCaching() {
@@ -15,7 +15,7 @@ async function startCaching() {
 }
 
 self.addEventListener('activate', (evt) =>{
-  evt.waitUntil(startActivating)
+  evt.waitUntil(startActivating())
 });
 
 async function startActivating() {
